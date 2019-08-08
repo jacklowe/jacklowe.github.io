@@ -5,19 +5,24 @@ function setup() {
   canvas.style("z-index", "-1");
 }
 
-var colours = ["#3bd326", "#c3bd32"];
+var colours = ["#47e376", "#e39f47", "#ed49d4"];
+// var colours = ["#47e376"];
+var shapes = [];
 
 function draw() {
   var randomIndex = Math.floor(Math.random() * colours.length);
-
   if (mouseIsPressed) {
-    stroke(colours[randomIndex]);
+    stroke(255);
+    fill(colours[randomIndex]);
+
     translate(mouseX - width / 2, mouseY - height / 2);
-    torus(100, 20);
+    rotateX(frameCount * 0.1);
+    rotateY(frameCount * 0.1);
+    rotateZ(frameCount * 0.1);
+    box(80, 24);
+
+    torus(80, 25);
   }
-  rotateX(frameCount * 0.1);
-  rotateY(frameCount * 0.1);
-  rotateZ(frameCount * 0.1);
 }
 
 function keyPressed() {
