@@ -1,27 +1,13 @@
 function setup() {
-  frameRate(5);
-  var canvas = createCanvas(windowWidth, windowHeight, WEBGL);
+  var canvas = createCanvas(windowWidth, windowHeight);
   canvas.position(0, 0);
   canvas.style("z-index", "-1");
 }
 
-var colours = ["#47e376", "#e39f47", "#ed49d4"];
-// var colours = ["#47e376"];
-var shapes = [];
-
 function draw() {
-  var randomIndex = Math.floor(Math.random() * colours.length);
+  stroke("#47e376");
   if (mouseIsPressed) {
-    stroke(255);
-    fill(colours[randomIndex]);
-
-    translate(mouseX - width / 2, mouseY - height / 2);
-    rotateX(frameCount * 0.1);
-    rotateY(frameCount * 0.1);
-    rotateZ(frameCount * 0.1);
-    box(80, 24);
-
-    torus(80, 25);
+    line(mouseX, mouseY, pmouseX, pmouseY);
   }
 }
 
@@ -32,3 +18,32 @@ function keyPressed() {
 function windowResized() {
   resizeCanvas(windowWidth, windowHeight);
 }
+
+// function keyPressed() {
+//   clear();
+// }
+
+// function draw() {
+//   background(102);
+//   rotateY(frameCount * 0.01);
+
+//   for (let j = 0; j < 5; j++) {
+//     push();
+
+//     fill(102);
+//     for (let i = 0; i < 80; i++) {
+//       translate(
+//         // sin(frameCount * 0.001 + j) * 100,
+//         sin(frameCount * 0.001 + j) * 100,
+//         0,
+//         0
+//         // i * 0.1
+//       );
+//       rotateZ(frameCount * 0.002);
+//       push();
+//       sphere(8, 6, 4);
+//       pop();
+//     }
+//     pop();
+//   }
+// }
