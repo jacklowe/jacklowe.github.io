@@ -1,5 +1,6 @@
-var COLOUR = "#47e376";
-// document.querySelector(".")
+var COLOUR = getComputedStyle(document.documentElement).getPropertyValue(
+  "--colour"
+);
 
 function setup() {
   var canvas = createCanvas(windowWidth, windowHeight);

@@ -18,6 +18,10 @@
       format("svg"); /* Legacy iOS */
 }
 
+:root {
+  --colour: #47e376;
+}
+
 body {
   margin: 0 auto;
   padding: 0;
@@ -43,7 +47,7 @@ body {
   font-family: "Montserrattt", sans-serif;
   font-weight: 900;
   font-size: 1.75rem;
-  color: #47e376;
+  color: var(--colour);
 }
 
 .button {
@@ -51,7 +55,7 @@ body {
   font-family: inherit;
   padding: 0rem;
   border: none;
-  border-bottom: 1px solid #47e376;
+  border-bottom: 1px solid var(--colour);
   font-size: 0.94rem;
   color: #e5e5e6;
   cursor: pointer;
@@ -59,7 +63,7 @@ body {
 }
 
 .button:hover {
-  color: #47e376;
+  color: var(--colour);
 }
 
 .button:focus {
