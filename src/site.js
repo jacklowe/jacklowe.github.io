@@ -3,4 +3,5 @@ var colours = [];
 
 btn.addEventListener("click", function() {
   // code to flip css variable
+  console.log("clicked");
 });
