@@ -1,3 +1,6 @@
+var COLOUR = "#47e376";
+// document.querySelector(".")
+
 function setup() {
   var canvas = createCanvas(windowWidth, windowHeight);
   canvas.position(0, 0);
@@ -5,7 +8,7 @@ function setup() {
 }
 
 function draw() {
-  stroke("#47e376");
+  stroke(COLOUR);
   if (mouseIsPressed) {
     line(mouseX, mouseY, pmouseX, pmouseY);
   }
