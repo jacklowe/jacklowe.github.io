@@ -1,7 +1,11 @@
-var btn = document.querySelector(".button");
-var colours = [];
+let button = document.querySelector(".button");
 
-btn.addEventListener("click", function() {
-  // code to flip css variable
-  console.log("clicked");
+const colours = ["#47e376", "pink", "#6432a8", "#CC9900", "#DF430A", "#1b0d82"];
+let index = 0;
+
+button.addEventListener("click", function() {
+  if (index !== colours.length - 1) index++;
+  else index = 0;
+
+  document.documentElement.style.setProperty("--colour", colours[index]);
 });

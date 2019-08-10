@@ -1,6 +1,4 @@
-var COLOUR = getComputedStyle(document.documentElement).getPropertyValue(
-  "--colour"
-);
+let COLOUR;
 
 function setup() {
   var canvas = createCanvas(windowWidth, windowHeight);
@@ -9,7 +7,12 @@ function setup() {
 }
 
 function draw() {
+  COLOUR = getComputedStyle(document.documentElement).getPropertyValue(
+    "--colour"
+  );
+
   stroke(COLOUR);
+
   if (mouseIsPressed) {
     line(mouseX, mouseY, pmouseX, pmouseY);
   }
