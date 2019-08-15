@@ -6,9 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="icon" type="image/x-icon" href="../img/favicon.ico" />
 
-    <link rel="stylesheet" href="site.css" />
     <link
       href="https://fonts.googleapis.com/css?family=Merriweather&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto&display=swap"
       rel="stylesheet"
     />
 
@@ -16,33 +19,108 @@
     <script src="../lib/p5.dom.min.js"></script>
     <script src="sketch.js"></script>
 
+    <link rel="stylesheet" href="site.css" />
+
     <title>Jack Lowe</title>
   </head>
   <body>
     <div class="container">
       <nav class="nav">
         <ul class="nav__list">
-          <li class="nav__link">About</li>
-          <li class="nav__link">Projects</li>
-          <li class="nav__link">Contact</li>
+          <li class="nav__element">
+            <a href="#about" class="nav__link">About</a>
+          </li>
+          <li class="nav__element">
+            <a href="#projects" class="nav__link">Projects</a>
+          </li>
+          <li class="nav__element">
+            <a href="#contact" class="nav__link">Contact</a>
+          </li>
         </ul>
       </nav>
 
-      <p class="headline">Draw with your cursor</p>
-
+      <div class="headline__container">
+        <p class="headline">
+          Draw with your cursor
+        </p>
+        <button class="button">click</button>
+      </div>
       <main>
-        <section class="main__section">
+        <section class="main__section" id="about">
           <h2 class="main__header">About</h2>
+          <p class="main__paragraph">
+            Welcome to my website. You can draw on it and click above to change
+            the colours. I write/code mostly with JavaScript and other web
+            technologies like HTML and CSS but I'm also familiar with Python.
+          </p>
+          <p class="main__paragraph">
+            Here are some of the things I've made 😊
+          </p>
         </section>
-        <section class="main__section">
+        <section class="main__section" id="projects">
           <h2 class="main__header">Projects</h2>
+          <p class="main__paragraph">
+            GovRate: Full stack web app where people can rate and review
+            Governments. The front-end uses React/Redux and the back-end is a
+            JavaScript/Node.js API using the Express.js web framework. For
+            testing, Jest is used across the stack and Cypress is used for
+            end-to-end testing on the front-end. For data persistence a MySQL
+            database was used. The app is hosted on AWS, with the app on EC2 and
+            the database on RDS. The code is available
+            <a href="https://github.com/jacklowe/govrate" class="link">here</a>
+            and the app can be accessed <a class="link">here</a>.
+          </p>
+          <p class="main__paragraph"></p>
+          <p class="main__paragraph">
+            This site: HTML, CSS and some client-side JavaScript to cycle
+            through the colours and alter the CSS appropriately. It's a static
+            site and is hosted on GitHub Pages. The interactive sketch was
+            created using
+            <a href="https://p5js.org/" class="link">p5.js</a>, a graphical
+            library based on
+            <a href="https://processing.org/" class="link">Processing</a>.
+          </p>
+          <p class="main__paragraph">
+            Master's Project: year-long computational and theoretical physics
+            research project for my physics degree thesis using Python. Using
+            scientific computing and mathematical methods to work on the
+            relationship between Anderson localisation and quantum decoherence,
+            a problem in quantum physics/solid state physics. I also did an 8
+            week internship the summer before working at the department on the
+            same project.
+          </p>
+          <p class="main__paragraph">
+            Other apps: Video booking app made with a React front-end and a
+            Node.js/Express API back-end and MongoDB database. It was made as a
+            part of this <a href="#" class="link">React course</a> and this
+            <a href="#" class="link">Node.js course</a>. The code can be viewed
+            <a href="#" class="link">here</a> and the app is deployed
+            <a href="#" class="link">here</a>. I also made a Yelp clone as a
+            part of this
+            <a href="#" class="link">web development course</a> again using
+            Express.js and MongoDB but with more MVC approach i.e. using a
+            templating engine and rendering views on the server. The code can be
+            viewed <a href="#" class="link">here</a> and the app is deployed
+            <a href="#" class="link">here</a>.
+          </p>
+          <p class="main__paragraph">
+            Misc: I have a <a href="#" class="link">repo</a> of common data
+            structures and algorithm implementations in JavaScript.
+          </p>
         </section>
-        <section class="main__section">
+        <section class="main__section" id="contact">
           <h2 class="main__header">Contact</h2>
+          <p class="main__paragraph">
+            <a href="mailto:jackmlowe@gmail.com" class="link">email</a>,&nbsp;
+            <a href="https://github.com/jacklowe" class="link">github</a>,&nbsp;
+            <a href="https://twitter.com/jack_iowe" class="link">twitter</a>
+          </p>
         </section>
       </main>
 
-      <button class="button">Change colour</button>
+      <hr />
+      Press any key or click
+      <button class="clear-button button">here</button> to clear canvas
     </div>
   </body>
 
