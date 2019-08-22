@@ -2,6 +2,6 @@
 
 (●'◡'●)
 
-HTML, CSS and JavaScript with a p5.js sketch in the background that you can draw on and change the colour of.
+HTML, CSS and JavaScript with a p5.js sketch in the background.
 
 View it here: https://some.link
