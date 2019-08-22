@@ -79,6 +79,7 @@ hr {
 }
 
 .link {
+  font-family: inherit;
   text-decoration: none;
   color: inherit;
   border-bottom: 1px solid var(--colour);
@@ -91,7 +92,7 @@ hr {
 
 .button {
   background: none;
-  font-family: "Roboto", sans-serif;
+  font-family: inherit;
   font-size: inherit;
   padding: 0rem;
   border: none;
