@@ -127,6 +127,10 @@ hr {
   font-family: "Montserrattt", sans-serif;
 }
 
+#para1 {
+  margin-bottom: 1.3rem;
+}
+
 @media (max-width: 400px) {
   body {
     font-size: 0.9rem;
