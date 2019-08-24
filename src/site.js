@@ -15,4 +15,4 @@ clearButton.addEventListener("click", function() {
   clear();
 });
 
-console.log("hello friend :)");
+console.log("hello :)");
