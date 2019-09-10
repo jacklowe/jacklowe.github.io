@@ -1,4 +1,4 @@
-/* @font-face {
+@font-face {
   font-family: "Montserrattt";
   font-style: italic;
   font-weight: 900;
@@ -8,12 +8,13 @@
       format("embedded-opentype"),
     url("../fonts/montserrat-v14-latin-900italic.woff2") format("woff2"),
     url("../fonts/montserrat-v14-latin-900italic.woff") format("woff"),
-    url("../fonts/montserrat-v14-latin-900italic.ttf") format("truetype"),
-    url("../fonts/montserrat-v14-latin-900italic.svg#Montserrat") format("svg");
-} */
+    /* url("../fonts/montserrat-v14-latin-900italic.ttf") format("truetype"), */
+      url("../fonts/montserrat-v14-latin-900italic.svg#Montserrat")
+      format("svg");
+}
 
 /* montserrat-900italic - latin */
-@font-face {
+/* @font-face {
   font-family: "Montserrattt";
   font-style: italic;
   font-weight: 900;
@@ -29,7 +30,7 @@
       format("truetype"),
     /* Safari, Android, iOS */
       url("../fonts/montserrat-v14-latin-900italic.svg") format("svg"); /* Legacy iOS */
-}
+} */
 
 :root {
   --colour: #47e376;
