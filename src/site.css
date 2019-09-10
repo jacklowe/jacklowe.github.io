@@ -28,8 +28,7 @@
     /* Modern Browsers */ url("../fonts/montserrat-v14-latin-900italic.ttf")
       format("truetype"),
     /* Safari, Android, iOS */
-      url("../fonts/montserrat-v14-latin-900italic.svg#Montserrat")
-      format("svg"); /* Legacy iOS */
+      url("../fonts/montserrat-v14-latin-900italic.svg") format("svg"); /* Legacy iOS */
 }
 
 :root {
@@ -79,7 +78,6 @@ hr {
 
 .main__header {
   font-family: "Montserrattt", "Montserrat", sans-serif;
-  font-weight: 900;
   font-size: 1.7rem;
   color: var(--colour);
   margin-bottom: 0.8rem;
